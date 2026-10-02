@@ -1,0 +1,128 @@
+:root {
+    --color_principal: #14114F;
+    --color_secundario: #004c96;
+    --color_oscuro: #2b2b2b;
+    --color_claro: #fff;
+    --color_fondo: #f4f7f6;
+    --color_bordes: #101d6b;
+}
+
+body {
+    font-family: var(--fuente_cuerpo);
+    background-color: var(--color_fondo);
+    color: var(--color_oscuro);
+    margin: 0;
+}
+
+.cabecera {
+    background-color: var(--color_principal);
+    color: var(--color_claro);
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid var(--color_secundario);
+}
+
+.menu {
+    background-color: var(--color_oscuro);
+    text-align: center;
+    padding: 15px;
+}
+
+.menu a {
+    color: var(--color_claro);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: var(--color_secundario);
+}
+
+.principal {
+    width: 75%;
+    margin: 40px auto;
+    background: var(--color_claro);
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.titulo-seccion {
+    font-family: var(--fuente_titulo);
+    color: var(--color_principal);
+    border-bottom: 2px dashed var(--color_bordes);
+    padding-bottom: 10px;
+}
+
+.foto-redonda {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid var(--color_principal);
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.resaltado {
+    color: var(--color_secundario);
+    font-weight: bold;
+}
+
+.subrayado {
+    text-decoration: underline;
+    color: var(--color_principal);
+}
+
+.cursiva {
+    font-style: italic;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color_secundario);
+    color: var(--color_claro);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.contenedor-mapa {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contenedor-mapa .cursiva {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contenedor-mapa iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--color_oscuro);
+    color: var(--color_claro);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
